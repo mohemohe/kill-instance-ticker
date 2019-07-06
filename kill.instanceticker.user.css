@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           Kill instance ticker
 @namespace      io.plusminus.mstdn.kill.instanceticker
-@version        1.0.0
+@version        1.0.1
 @description    めくらじゃないから邪魔なだけ
 @author         mohemohe
 ==/UserStyle== */
 
 @-moz-document regexp("https://mstdn\\..*/?.*") {
-    body .status .status__info a[href] .display-name::after {
+    :root body .status .status__info a[href] .display-name::after {
         display: none !important;
         opacity: 0 !important;
         height: 0 !important;
